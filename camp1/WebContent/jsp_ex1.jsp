@@ -20,7 +20,7 @@
 	<%! int data=50; %>  
 	<%= "Value of the variable is:"+data %> 
 	<h2>1. Request</h2>
-	<form action="index.jsp">  
+	<form action="index.jsp" method="post">  
 		<input type="text" name="uname">  
 		<input type="submit" value="go"><br/>  
 	</form>  

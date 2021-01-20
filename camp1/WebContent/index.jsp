@@ -12,6 +12,13 @@
 	out.print("Welcome " + request.getParameter("uname"));
 	String driver = config.getInitParameter("dname");
 	out.print("driver name is=" + driver);
+	String name=request.getParameter("uname");   
+	  
+	session.setAttribute("user",name);  
+	  
+	  
 	%>
+	<a href="session.jsp">second jsp page</a>
+	
 </body>
 </html>
