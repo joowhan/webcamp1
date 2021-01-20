@@ -21,11 +21,13 @@
 	<%= "Value of the variable is:"+data %> 
 	<h2>1. Request</h2>
 	<form action="index.jsp" method="post">  
-		<input type="text" name="uname">  
+		<input type="text" name="uname"><br/>
+		<input type="text" name="stdid">  
 		<input type="submit" value="go"><br/>  
 	</form>  
 	
 	<%   
+		request.setCharacterEncoding("utf-8");
 		String name = request.getParameter("uname");  
 		out.print("welcome "+name); 
 		//response.sendRedirect("index.jsp");

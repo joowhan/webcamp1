@@ -8,7 +8,9 @@
 </head>
 <body>
 	<%
-	String name=(String)session.getAttribute("user");  
+	request.setCharacterEncoding("utf-8");
+	String name=(String)session.getAttribute("user"); 
+	String stdid=(String)pageContext.getAttribute("num",PageContext.SESSION_SCOPE); 
 	out.print("Hello "+name); 
 	%>
 </body>
