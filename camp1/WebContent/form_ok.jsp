@@ -9,9 +9,11 @@
 <body>
 <%
 	request.setCharacterEncoding("utf-8");
-	String fname = request.getParameter("fname"); 
+	String id = request.getParameter("id"); 
+	String studentNumber = request.getParameter("stdid");
 %>
 <h2>입력하신 데이터는 다음과 같습니다.</h2>
-<%=fname %>
+ID: <%=id %>
+학번: <%=studentNumber %>
 </body>
 </html>
