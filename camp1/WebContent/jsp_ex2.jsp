@@ -23,7 +23,8 @@
 	Today is: <%= new Date() %>
 	<jsp:forward page="printdate.jsp" >  
 		<jsp:param name="name" value="javatpoint.com" />  
-	</jsp:forward>  
+	</jsp:forward> 
+	
 	
 	  
 </body>
